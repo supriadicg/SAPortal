@@ -3,6 +3,7 @@ package com.rumahcg.x3.entity;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -18,7 +19,7 @@ public class Departement {
 	
 	private String name;
 	
-	@OneToMany(mappedBy="departement")
+	@OneToMany(mappedBy="departement", fetch=FetchType.LAZY)
 	private List<Employee> employees;
 
 	public int getId() {

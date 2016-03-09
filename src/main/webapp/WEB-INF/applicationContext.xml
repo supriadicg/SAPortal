@@ -23,8 +23,10 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	
-	<beans profile="prod">
-		<import resource="database-prod.xml"/>
-	</beans>
+	<jpa:repositories base-package="com.rumahcg.x3.repository" />
 	
+	
+		<import resource="database-prod.xml"/>
+	
+		
 </beans>

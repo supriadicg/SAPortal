@@ -4,6 +4,7 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  	
   
   	<!-- Declare a Spring MVC DispatcherServlet as usual -->
     <servlet>
@@ -19,4 +20,8 @@
         <url-pattern>*.xml</url-pattern>
         <url-pattern>*.json</url-pattern>
     </servlet-mapping>
+    
+    <listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 </web-app>

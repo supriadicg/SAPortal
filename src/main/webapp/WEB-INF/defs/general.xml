@@ -12,4 +12,28 @@
 		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
 		<put-attribute name="current" value="index"></put-attribute>
 	</definition>
+	
+	<definition name="users" extends="common">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+		<put-attribute name="current" value="index"></put-attribute>
+	</definition>
+	
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="User  Registration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+		<put-attribute name="current" value="index"></put-attribute>
+	</definition>
+	
+	<definition name="departement" extends="common">
+		<put-attribute name="title" value="Departement" />
+		<put-attribute name="body" value="/WEB-INF/jsp/departement.jsp" />
+		<put-attribute name="current" value="index"></put-attribute>
+	</definition>
+	
+	<definition name="departements" extends="common">
+		<put-attribute name="title" value="Departement" />
+		<put-attribute name="body" value="/WEB-INF/jsp/departement.jsp" />
+		<put-attribute name="current" value="index"></put-attribute>
+	</definition>
 </tiles-definitions>
